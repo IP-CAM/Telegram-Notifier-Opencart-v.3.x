@@ -7,13 +7,13 @@
     <br>
     <code>$this->load->model('tool/telegram');</code>
     <br>
-    <code>$this->model_tool_telegram->sendMessage($this->config->get('config_telegram_bot_id'), $this->config->get('config_telegram_chat_id'), $text);</code>
+    <code>$this->model_tool_telegram->sendMessage($bot_token, $chat_id, $text);</code>
     <br><br>
     Parameters:
     <ul>
-      <li><code>config_telegram_bot_id</code> is your bot id;</li>
-      <li><code>config_telegram_chat_id</code> is your chat id which you can get by using <code>getUpdates</code> method;</li>
-      <li><code>$text</code> is your message which you want to send to Telegram.</li>
+      <li><code>$bot_token</code> is a string along the lines of <code>110201543:AAHdqTcvCH1vGWJxfSeofSAs0K5PALDsaw</code> that is required to authorize the bot and send requests to the Bot API. Keep your token secure and store it safely, it can be used by anyone to control your bot;</li>
+      <li><code>$chat_id</code> is your chat id which you can get by using <code>getUpdates</code> method;</li>
+      <li><code>$text</code> is your message which you want to send.</li>
     </ul>
   </li>
 <ol>
