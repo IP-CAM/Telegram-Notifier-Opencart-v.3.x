@@ -32,8 +32,8 @@ class ModelToolTelegram extends Model {
 		$handle = curl_init($api_url);
 
 		$parameters = array(
-			'chat_id'	=> $chat_id,
-			'text'		=> $text
+			'chat_id' => $chat_id,
+			'text'    => $text
 		);
 
 		curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
