@@ -12,7 +12,7 @@
     Parameters:
     <ul>
       <li><code>$bot_token</code> is a string along the lines of <code>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code> that is required to authorize the bot and send requests to the Bot API. Keep your token secure and store it safely, it can be used by anyone to control your bot.</li>
-      <li><code>$chat_id</code> is your chat id which you can get by using <code>getUpdates</code> method. Use <code>curl</code> function as in the example above:
+      <li><code>$chat_id</code> is your chat id which you can get by using <code>getUpdates</code> method. Use <code>curl</code> function as in the example below:
       <br>
       <code>curl "https://api.telegram.org/bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11/getUpdates"</code>
       </li>
