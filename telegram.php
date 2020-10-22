@@ -38,7 +38,7 @@ class ModelToolTelegram extends Model {
 			'text'    => $text
 		);
 
-		curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($handle, CURLOPT_RETURNTRANSFER, false);
 		curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, 5);
 		curl_setopt($handle, CURLOPT_TIMEOUT, 60);
 		curl_setopt($handle, CURLOPT_POST, true);
