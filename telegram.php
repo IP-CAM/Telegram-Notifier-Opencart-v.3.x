@@ -1,6 +1,8 @@
 <?php
 /**
- * Telegram bot notifier in CMS OpenCart for Opencart community
+ * Opencart Telegram Notifier is a program code which allows you to
+ * configure notifications in CMS Opencart (3.X version) by using
+ * Telegram messenger bot.
  *
  * Copyright (C) 2020  Dmitriy Sokolenko
  * 
@@ -43,7 +45,7 @@ class ModelToolTelegram extends Model {
 		curl_setopt($handle, CURLOPT_POSTFIELDS, json_encode($parameters));
 		curl_setopt($handle, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 
-		$result = curl_exec($handle);
+		curl_exec($handle);
 
 		curl_close($handle);
 	}
